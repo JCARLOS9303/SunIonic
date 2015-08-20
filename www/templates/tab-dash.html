@@ -1,0 +1,25 @@
+<ion-view view-title="Dashboard">
+  
+  <img src="img/sesion.jpg">
+  <ion-content class="padding">
+   <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="updateData()">
+  </ion-refresher>
+
+
+  <div class="list card" align="center">
+  
+       <div align="left">
+        <img width="200px" height="200px" ng-src="http://openweathermap.org/img/w/{{clima.weather[0].icon}}.png">        
+      </div>
+
+         <h2><b>Cancún</b></h2>
+        <h2>Temperatura del Dia {{clima.main.temp}}</h2>
+        <h2>{{clima.dt*1000 | date: ''}}</h2>
+        <h2>Humedad {{clima.main.humidity}}%</h2>
+        <h2>Tiempo: {{clima.weather[0].description}}</h2>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

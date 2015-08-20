@@ -1,0 +1,32 @@
+<ion-view view-title="Configuración Clima">
+<img src="img/sesion.jpg">
+  <ion-content>
+  <h2>TIPO DE TEMPERATURA</h2>
+
+  <div class="list">
+    
+     <label class="item item-radio">
+    <input type="radio" name="group" ng-model="settings.unidad" ng-change="changeValues()" value="metric">
+    <div class="item-content" >
+      Celcius
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+    </label>
+
+     <label class="item item-radio">
+    <input type="radio" name="group" ng-model="settings.unidad" ng-change="changeValues()" value="imperial">
+    <div class="item-content" >
+      Imperial
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+    </label>
+
+
+
+  </div>
+
+
+
+
+  </ion-content>
+</ion-view>
